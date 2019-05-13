@@ -7,5 +7,5 @@ Rails.application.routes.draw do
   get 'index' => 'posts#index'
   get  'posts/new' => 'posts#new'
   post 'posts' => 'posts#create'
-
+  patch 'posts/:id' => 'posts#update', as: 'update_post'
 end
